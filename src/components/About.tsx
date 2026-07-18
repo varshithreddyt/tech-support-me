@@ -5,27 +5,23 @@ const About = () => {
   const education = [
     {
       institution: "Pursuing Master of Business Administration (MBA)",
-      degree: "Specialization in progress",
+      degree: "Business Administration, Osmania University",
       location: "Hyderabad, India",
-      years: "Present",
     },
     {
       institution: "Jawaharlal Nehru Technological University, Hyderabad",
       degree: "Bachelor of Technology - Computer Science Engineering (AI and ML)",
       location: "Hyderabad, India",
-      years: "2020-2024",
     },
     {
       institution: "Sri Chaitanya Junior College",
       degree: "Intermediate",
       location: "Hyderabad, India",
-      years: "2018-2020",
     },
     {
       institution: "TS Model School",
       degree: "SSC",
       location: "Kosgi",
-      years: "2017-2018",
     },
   ];
 
@@ -93,9 +89,6 @@ const About = () => {
                       <h4 className="text-xl font-semibold">{edu.institution}</h4>
                       <p className="text-muted-foreground">{edu.degree}</p>
                       <p className="text-sm text-muted-foreground">{edu.location}</p>
-                    </div>
-                    <div className="text-right space-y-1">
-                      <p className="text-sm text-muted-foreground">{edu.years}</p>
                     </div>
                   </div>
                 </CardContent>

@@ -81,52 +81,26 @@ const FloatingCursor = () => {
 
   return (
     <>
-      {/* Main floating bubble */}
+      {/* Single floating bubble cursor */}
       <div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 mix-blend-difference"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2"
         style={{
           transform: `translate(${position.x}px, ${position.y}px) translate(-50%, -50%)`,
         }}
       >
         <div
-          className={`rounded-full bg-primary transition-all duration-300 ease-out ${
+          className={`rounded-full backdrop-blur-sm transition-all duration-200 ease-out ${
             isHovering
-              ? "w-16 h-16 opacity-60"
+              ? "w-14 h-14 opacity-40 scale-110"
               : isClicking
-              ? "w-6 h-6 opacity-90"
-              : "w-8 h-8 opacity-80"
+              ? "w-5 h-5 opacity-95 scale-90"
+              : "w-7 h-7 opacity-85"
           }`}
           style={{
-            boxShadow: "0 0 30px rgba(59, 130, 246, 0.5), 0 0 60px rgba(139, 92, 246, 0.3)",
-          }}
-        />
-      </div>
-
-      {/* Trailing smaller bubbles */}
-      <div
-        className="fixed top-0 left-0 pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2"
-        style={{
-          transform: `translate(${position.x - 20}px, ${position.y + 20}px) translate(-50%, -50%)`,
-        }}
-      >
-        <div
-          className="w-3 h-3 rounded-full bg-accent/60 opacity-60"
-          style={{
-            boxShadow: "0 0 15px rgba(139, 92, 246, 0.4)",
-          }}
-        />
-      </div>
-
-      <div
-        className="fixed top-0 left-0 pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2"
-        style={{
-          transform: `translate(${position.x - 35}px, ${position.y + 35}px) translate(-50%, -50%)`,
-        }}
-      >
-        <div
-          className="w-1.5 h-1.5 rounded-full bg-primary/50 opacity-40"
-          style={{
-            boxShadow: "0 0 10px rgba(59, 130, 246, 0.4)",
+            background: "linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(139, 92, 246, 0.9))",
+            boxShadow: isHovering
+              ? "0 0 40px rgba(59, 130, 246, 0.6), 0 0 80px rgba(139, 92, 246, 0.4)"
+              : "0 0 25px rgba(59, 130, 246, 0.5), 0 0 50px rgba(139, 92, 246, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.3)",
           }}
         />
       </div>
