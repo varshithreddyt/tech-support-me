@@ -4,24 +4,27 @@ import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
   const education = [
     {
+      institution: "Pursuing Master of Business Administration (MBA)",
+      degree: "Specialization in progress",
+      location: "Hyderabad, India",
+      years: "Present",
+    },
+    {
       institution: "Jawaharlal Nehru Technological University, Hyderabad",
       degree: "Bachelor of Technology - Computer Science Engineering (AI and ML)",
       location: "Hyderabad, India",
-      grade: "CGPA: 7.47/10.0",
       years: "2020-2024",
     },
     {
       institution: "Sri Chaitanya Junior College",
       degree: "Intermediate",
       location: "Hyderabad, India",
-      grade: "94%",
       years: "2018-2020",
     },
     {
       institution: "TS Model School",
       degree: "SSC",
       location: "Kosgi",
-      grade: "8.7 CGPA",
       years: "2017-2018",
     },
   ];
@@ -92,7 +95,6 @@ const About = () => {
                       <p className="text-sm text-muted-foreground">{edu.location}</p>
                     </div>
                     <div className="text-right space-y-1">
-                      <p className="font-medium">{edu.grade}</p>
                       <p className="text-sm text-muted-foreground">{edu.years}</p>
                     </div>
                   </div>
