@@ -19,17 +19,54 @@ const Experience = () => {
     "Communication & problem-solving",
   ];
 
+  const currentRoleHighlights = [
+    "Software development & maintenance",
+    "Collaboration with cross-functional teams",
+    "Problem-solving & debugging",
+    "Agile development practices",
+  ];
+
   return (
     <section id="experience" className="py-24 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Experience & Training</h2>
           <p className="text-lg text-muted-foreground">
-            Internships, certifications, and specialized training
+            Current role, internships, certifications, and specialized training
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Briefcase className="h-5 w-5 text-primary" />
+                </div>
+                Associate Software Engineer
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-muted-foreground">
+                Currently working as an Associate Software Engineer, contributing to software development, maintenance, and collaborative problem-solving in an agile environment.
+              </p>
+              <div className="space-y-2">
+                <p className="font-medium text-sm">Key Highlights:</p>
+                <div className="flex flex-wrap gap-2">
+                  {currentRoleHighlights.map((item) => (
+                    <Badge
+                      key={item}
+                      variant="outline"
+                      className="text-xs border-primary/20"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
