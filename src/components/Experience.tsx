@@ -1,26 +1,31 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, Award } from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Experience = () => {
-  const modules = [
-    "Salesforce Fundamentals",
-    "Organizational Setup",
-    "Relationship & Process Automation",
-    "Types of Flows & Security",
-    "Testing & Debugging",
-    "VS Code Setup",
+  const courseTopics = [
+    "Introduction to DevOps",
+    "CI/CD Pipelines",
+    "Infrastructure Pipeline",
+    "Application Pipeline",
+    "AWS Infrastructure Labs",
+    "DevSecOps Practices",
   ];
 
-  const certificates = ["Salesforce", "Data Analytics Essentials"];
+  const internshipHighlights = [
+    "Salesforce CRM data management",
+    "Customer record updates",
+    "Data accuracy maintenance",
+    "Communication & problem-solving",
+  ];
 
   return (
     <section id="experience" className="py-24 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">Experience & Certifications</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Experience & Training</h2>
           <p className="text-lg text-muted-foreground">
-            Professional development and continuous learning
+            Internships, certifications, and specialized training
           </p>
         </div>
 
@@ -31,23 +36,23 @@ const Experience = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                   <Briefcase className="h-5 w-5 text-primary" />
                 </div>
-                Salesforce Internship
+                SmartBridge Internship
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Completed comprehensive Salesforce Trailhead modules over 8 weeks
+                Salesforce Developer Virtual Internship focused on CRM management, customer data handling, and sales/support workflows.
               </p>
               <div className="space-y-2">
-                <p className="font-medium text-sm">Completed Modules:</p>
+                <p className="font-medium text-sm">Key Learnings:</p>
                 <div className="flex flex-wrap gap-2">
-                  {modules.map((module) => (
+                  {internshipHighlights.map((item) => (
                     <Badge
-                      key={module}
+                      key={item}
                       variant="outline"
                       className="text-xs border-primary/20"
                     >
-                      {module}
+                      {item}
                     </Badge>
                   ))}
                 </div>
@@ -59,25 +64,28 @@ const Experience = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Award className="h-5 w-5 text-primary" />
+                  <GraduationCap className="h-5 w-5 text-primary" />
                 </div>
-                Certifications
+                DevSecOps Training
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Professional certifications demonstrating expertise
+                DevSecOps Course Training by Kyndryl and NIELIT with hands-on labs on AWS infrastructure and CI/CD pipelines.
               </p>
-              <div className="space-y-3">
-                {certificates.map((cert) => (
-                  <div
-                    key={cert}
-                    className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg"
-                  >
-                    <div className="w-2 h-2 bg-primary rounded-full" />
-                    <span className="font-medium">{cert}</span>
-                  </div>
-                ))}
+              <div className="space-y-2">
+                <p className="font-medium text-sm">Covered Topics:</p>
+                <div className="flex flex-wrap gap-2">
+                  {courseTopics.map((topic) => (
+                    <Badge
+                      key={topic}
+                      variant="outline"
+                      className="text-xs border-primary/20"
+                    >
+                      {topic}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             </CardContent>
           </Card>

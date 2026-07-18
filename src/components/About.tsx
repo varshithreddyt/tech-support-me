@@ -4,8 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
   const education = [
     {
-      institution: "Guru Nanak Institutions Technical Campus",
-      degree: "Bachelor of Computer Science and Engineering",
+      institution: "Jawaharlal Nehru Technological University, Hyderabad",
+      degree: "Bachelor of Technology - Computer Science Engineering (AI and ML)",
       location: "Hyderabad, India",
       grade: "CGPA: 7.47/10.0",
       years: "2020-2024",
@@ -20,7 +20,7 @@ const About = () => {
     {
       institution: "TS Model School",
       degree: "SSC",
-      location: "Kosgi, Mahabubnagar",
+      location: "Kosgi",
       grade: "8.7 CGPA",
       years: "2017-2018",
     },
@@ -32,8 +32,9 @@ const About = () => {
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate about converting ideas into successful results and enhancing my educational 
-            and professional skills in challenging environments.
+            Enthusiastic DevOps and AWS Cloud Engineer with a strong drive for innovation, 
+            problem-solving, and troubleshooting. I excel in both collaborative team settings 
+            and as an independent contributor.
           </p>
         </div>
 
@@ -45,7 +46,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Objective</h3>
               <p className="text-muted-foreground">
-                To grow and develop by achieving organizational goals through innovative solutions
+                Seeking DevOps Engineer and AWS Cloud Engineer roles to build scalable, automated cloud infrastructure
               </p>
             </CardContent>
           </Card>
@@ -69,7 +70,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Achievements</h3>
               <p className="text-muted-foreground">
-                Salesforce certified with Data Analytics expertise
+                DevSecOps certified by Kyndryl and NIELIT with hands-on AWS labs
               </p>
             </CardContent>
           </Card>

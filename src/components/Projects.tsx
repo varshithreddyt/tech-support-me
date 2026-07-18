@@ -1,19 +1,19 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, PenTool } from "lucide-react";
+import { Cloud, Brain } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Twitter Sentiment Analysis Using Machine Learning",
-      description: "Implemented sentiment analysis on tweets using machine learning to analyze customer perspectives. The project includes data collection, text pre-processing, sentiment detection and classification, along with model training and testing.",
-      icon: Brain,
-      tags: ["Machine Learning", "NLP", "Python", "Data Analysis"],
+      title: "Cloud Cost Optimization on AWS",
+      description: "Developed a Lambda function that fetches all EBS snapshots owned by the same account and retrieves a list of active EC2 instances. For each snapshot, it checks if the associated volume is not linked to any active instance. If a stale snapshot is found, it deletes it to optimize storage costs effectively.",
+      icon: Cloud,
+      tags: ["AWS", "Lambda", "EBS", "EC2", "Cost Optimization", "DevOps"],
     },
     {
-      title: "Signature Verification Using CNN and HOG",
-      description: "Developed a hybrid approach combining CNN and HOG techniques for feature extraction from signature images. Achieved 99.99% learning accuracy through multi-classification approach with high predictive capacity.",
-      icon: PenTool,
-      tags: ["Deep Learning", "CNN", "Computer Vision", "Feature Extraction"],
+      title: "Twitter Sentiment Analysis Using Machine Learning",
+      description: "Implemented Twitter sentiment analysis under text and opinion mining. The project analyzes tweet sentiments, feeds data to a machine learning model for training, checks accuracy, and enables future predictions. Includes data collection, text preprocessing, sentiment detection, classification, training, and testing.",
+      icon: Brain,
+      tags: ["Python", "Machine Learning", "NLP", "Sentiment Analysis"],
     },
   ];
 
@@ -23,7 +23,7 @@ const Projects = () => {
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Projects</h2>
           <p className="text-lg text-muted-foreground">
-            Innovative solutions combining machine learning and computer vision
+            Hands-on experience in cloud automation and machine learning
           </p>
         </div>
 
