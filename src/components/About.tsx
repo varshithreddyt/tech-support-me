@@ -10,7 +10,7 @@ const About = () => {
     },
     {
       institution: "Jawaharlal Nehru Technological University, Hyderabad",
-      degree: "Bachelor of Technology - Computer Science Engineering (AI and ML)",
+      degree: "Bachelor of Technology - Computer Science Engineering",
       location: "Hyderabad, India",
     },
     {
@@ -31,9 +31,9 @@ const About = () => {
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Enthusiastic DevOps and AWS Cloud Engineer with a strong drive for innovation, 
-            problem-solving, and troubleshooting. I excel in both collaborative team settings 
-            and as an independent contributor.
+            Associate Software Engineer with a strong drive for innovation, problem-solving, 
+            and troubleshooting. I excel in both collaborative team settings and as an 
+            independent contributor.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Objective</h3>
               <p className="text-muted-foreground">
-                Seeking DevOps Engineer and AWS Cloud Engineer roles to build scalable, automated cloud infrastructure
+                Seeking software engineering roles to build scalable solutions and contribute to impactful products
               </p>
             </CardContent>
           </Card>
@@ -57,7 +57,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Education</h3>
               <p className="text-muted-foreground">
-                Computer Science Engineer with strong academic foundation
+                B.Tech Graduate pursuing MBA with a strong academic foundation
               </p>
             </CardContent>
           </Card>
