@@ -13,7 +13,7 @@ const Hero = () => {
           T Sai Varshith Reddy
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-          Systems Engineer-Spire InfoTech
+          Systems Engineer at Motto Systems
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button
